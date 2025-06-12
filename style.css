@@ -10,16 +10,38 @@
     --line: #ECECEC;
     --logoblack: #000;
 }
-
+.studia-name{
+    color: var(--button-text);
+}  
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
 a{
     text-decoration: none;
     color: currentColor;
 }
 ul{
     list-style: none;
+    padding-left: 0;
+    margin: 0 0 0 0;
 }
 body{
     font-family: Roboto;
+}
+.logo{
+    padding-top: 24px;
+    display: flex;
+}
+.header{
+    display: flex;
+    height: 80px;
 }
 .logo-web{
     color: var(--button-text);
@@ -44,6 +66,7 @@ body{
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    display: flex;
 }
 .nav-page:hover{
     color: var(--button-text);
@@ -58,6 +81,7 @@ body{
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    display: flex;
 }
 .div-contact:hover{
     color: var(--button-text);
@@ -70,29 +94,70 @@ body{
 }
 .deicsion{
     background-color: var(--header-fotter);
+    height: 600px;
+}
+.nav{
+    display: flex;
+    padding-top: 32px;
+}
+.nav-ul{
+    margin: 0px 344px 0px 93px;
     
+    display: flex;
+    width: 281px;
+    justify-content: space-between;
+}
+.div{
+    display: flex;
+    padding-top: 32px;
+    justify-content: space-between;
+    width: 307px;
+}
+.studia{
+    color: var(--button-text);
+}
+.portfolio{
+    color: var(--button-text);
 }
 .decision-text{
     color: var(--h1text);
-    text-align: center;
+    padding: 200px 0 30px 0;
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36364;
     letter-spacing: 2.64px;
     text-transform: uppercase;
+    margin:0 auto 0 auto;
+    text-align: center;
+    width: 696px;
 }
 .decision-button{
     border-radius: 4px;
     background: #2196F3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: var(--h1text);
-    text-align: center;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.875;
     letter-spacing: 0.96px;
+    width: 216px;
+    height: 50px;
+    margin:0 auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.decision-button-text{
+    text-align: center;
+}
+.prefer-ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 56px;
+}
+.prefer-li{
+    width: 270px;
+}
 .prefer-title{
     color: var(--standart-text);
     font-size: 14px;
@@ -100,6 +165,7 @@ body{
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    margin: 0 0 0 0;
 }
 .prefer-text{
     color: var(--add-information);
@@ -115,6 +181,34 @@ body{
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
+}
+.work-title{
+    display: flex;
+    padding-left: 402px;
+    padding-bottom: 50px;
+    padding-top: 56px;
+    margin: 0 0 0 0;
+}
+.work{
+    height: 442px;
+}
+.team{
+    background-color: var(--ourteam);
+}
+.team-title{
+    display: flex;
+    padding-left: 453px;
+    margin: 0 0 0 0;
+    padding-bottom: 50px;
+    padding-top: 94px;
+}
+.work-ul{
+    display: flex;
+    justify-content: space-between;
+}
+.work-img{
+    width: 370px;
+    height: 294px;
 }
 .team-name{
     color: var(--standart-text);
@@ -132,10 +226,25 @@ body{
     line-height: normal;
     letter-spacing: 0.48px;
 }
+.team-ul{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+}
+.team-li{
+    background-color: var(--h1text);
+}
+.team-image{
+    width: 270px;
+    height: 260px;
+}
 footer{
     background-color: var(--header-fotter);
 }
-
+.logo-footer{
+    display: flex;
+    padding: 60px 0 20px;
+}
 .footer-contact{
     color: rgba(255, 255, 255, 0.60);
     font-size: 14px;
@@ -158,6 +267,13 @@ footer{
     font-weight: 400;
     line-height: 1.71429; 
     letter-spacing: 0.42px;
+}
+.footer-div{
+    display: flex;
+    height: 141px;
+    padding-bottom: 60px;
+    justify-content: space-between;
+    flex-direction: column;
 }
 .portfolio-button{
     border-radius: 4px;
@@ -194,4 +310,57 @@ footer{
     font-weight: 400;
     line-height: 1.875; /* 187.5% */
     letter-spacing: 0.48px;
+}
+.portfolio-ulbuttons{
+    display: flex;
+    width: 575px;
+    margin: 0 auto 0 auto;
+    padding: 94px 0;
+    justify-content: space-between;
+}
+.all{
+    width: 73px;
+    height: 38px;
+    flex-shrink: 0;
+}
+.web-site{
+    width: 125px;
+    height: 38px;
+    flex-shrink: 0;
+}
+.dodact{
+width: 112px;
+height: 38px;
+flex-shrink: 0;
+}
+.disagn{
+width: 103px;
+height: 38px;
+flex-shrink: 0;
+}
+.market{
+width: 130px;
+height: 38px;
+flex-shrink: 0;
+}
+.portfolio-portfolio{
+    display: flex;
+    margin: 0 auto 0 auto;
+    width: 1170px;
+    height: 1366px;    
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+}
+.portfolio-portfolio>li{
+    border: 1px solid var(--portfolio);
+    background: var(--h1text);
+    height: 404px;
+}
+.portfolio-portfolio>li>h3{
+    margin: 20px 0px 4px 24px;
+}
+.portfolio-portfolio>li>p{
+    margin: 0 0 0 24px;
 }
