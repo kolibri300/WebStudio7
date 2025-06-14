@@ -12,12 +12,7 @@
 }
 .studia-name{
     color: var(--button-text);
-}  
-.container{
-    width: 1170px;
-    margin: 0 auto;
-    
-}
+} 
 *,
 *::after,
 *::before{
@@ -29,19 +24,31 @@ a{
 }
 ul{
     list-style: none;
-    padding-left: 0;
-    margin: 0 0 0 0;
+    padding: 0;
+    margin: 0;
 }
 body{
     font-family: Roboto;
 }
+ 
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px ;
+}
 .logo{
-    padding-top: 24px;
     display: flex;
 }
 .header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--line);
+    
+}
+.header-div{
     display: flex;
-    height: 80px;
+    justify-content: space-between;
+    align-items: center;
 }
 .logo-web{
     color: var(--button-text);
@@ -94,31 +101,26 @@ body{
 }
 .deicsion{
     background-color: var(--header-fotter);
-    height: 600px;
+    padding-bottom: 200px;
 }
 .nav{
     display: flex;
-    padding-top: 32px;
+    margin-right: 344px;
 }
 .nav-ul{
-    margin: 0px 344px 0px 93px;
-    
     display: flex;
-    width: 281px;
-    justify-content: space-between;
+    column-gap: 50px;
 }
 .div{
     display: flex;
-    padding-top: 32px;
-    justify-content: space-between;
-    width: 307px;
-}
+    column-gap: 50px;
+}/*
 .studia{
     color: var(--button-text);
 }
 .portfolio{
     color: var(--button-text);
-}
+}*/
 .decision-text{
     color: var(--h1text);
     padding: 200px 0 30px 0;
@@ -140,8 +142,7 @@ body{
     font-weight: 700;
     line-height: 1.875;
     letter-spacing: 0.96px;
-    width: 216px;
-    height: 50px;
+    padding: 10px 32px;
     margin:0 auto 0 auto;
     display: flex;
     justify-content: center;
@@ -152,11 +153,8 @@ body{
 }
 .prefer-ul{
     display: flex;
+    padding: 94px 0;
     justify-content: space-between;
-    padding: 56px;
-}
-.prefer-li{
-    width: 270px;
 }
 .prefer-title{
     color: var(--standart-text);
@@ -184,13 +182,9 @@ body{
 }
 .work-title{
     display: flex;
-    padding-left: 402px;
+    margin: 0 auto;
+    width: 366.8px;
     padding-bottom: 50px;
-    padding-top: 56px;
-    margin: 0 0 0 0;
-}
-.work{
-    height: 442px;
 }
 .team{
     background-color: var(--ourteam);
@@ -207,8 +201,9 @@ body{
     justify-content: space-between;
 }
 .work-img{
-    width: 370px;
-    height: 294px;
+    display: block;
+    height: auto;
+    max-width: 100%;
 }
 .team-name{
     color: var(--standart-text);
@@ -230,13 +225,19 @@ body{
     display: flex;
     justify-content: space-between;
     padding-bottom: 94px;
+    column-gap: 30px;
 }
 .team-li{
     background-color: var(--h1text);
 }
 .team-image{
-    width: 270px;
-    height: 260px;
+    padding-bottom: 30px;
+}
+.team-name{
+    padding-bottom: 10px;
+}
+.team-work{
+    padding-bottom: 30px;
 }
 footer{
     background-color: var(--header-fotter);
@@ -270,10 +271,9 @@ footer{
 }
 .footer-div{
     display: flex;
-    height: 141px;
     padding-bottom: 60px;
-    justify-content: space-between;
     flex-direction: column;
+    row-gap: 9px;
 }
 .portfolio-button{
     border-radius: 4px;
@@ -284,6 +284,8 @@ footer{
     font-weight: 500;
     line-height: 1.625; /* 162.5% */
     letter-spacing: 0.48px;   
+    padding: 6px 22px;
+    flex-shrink: 0;
 }
 .portfolio-button:hover{
     border-radius: 4px;
@@ -313,54 +315,32 @@ footer{
 }
 .portfolio-ulbuttons{
     display: flex;
+    column-gap: 8px;
+    margin: 0 auto;
     width: 575px;
-    margin: 0 auto 0 auto;
     padding: 94px 0;
-    justify-content: space-between;
+    white-space: nowrap;
 }
 .all{
-    width: 73px;
-    height: 38px;
-    flex-shrink: 0;
+    padding: 6px 25px;
 }
 .web-site{
-    width: 125px;
-    height: 38px;
-    flex-shrink: 0;
-}
-.dodact{
-width: 112px;
-height: 38px;
-flex-shrink: 0;
-}
-.disagn{
-width: 103px;
-height: 38px;
-flex-shrink: 0;
-}
-.market{
-width: 130px;
-height: 38px;
-flex-shrink: 0;
 }
 .portfolio-portfolio{
     display: flex;
-    margin: 0 auto 0 auto;
-    width: 1170px;
-    height: 1366px;    
+    margin: 0 auto;
     justify-content: space-between;
-    align-content: space-between;
+    row-gap: 30px;
     flex-wrap: wrap;
     padding-bottom: 94px;
 }
 .portfolio-portfolio>li{
     border: 1px solid var(--portfolio);
     background: var(--h1text);
-    height: 404px;
 }
 .portfolio-portfolio>li>h3{
-    margin: 20px 0px 4px 24px;
+    padding: 20px 0px 4px 24px;
 }
 .portfolio-portfolio>li>p{
-    margin: 0 0 0 24px;
+    padding: 0 0 20px 24px;
 }
