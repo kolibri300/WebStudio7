@@ -317,26 +317,26 @@ footer{
     display: flex;
     column-gap: 8px;
     margin: 0 auto;
-    width: 575px;
+    justify-content: center;
+    width: auto;
     padding: 94px 0;
     white-space: nowrap;
 }
 .all{
     padding: 6px 25px;
 }
-.web-site{
-}
 .portfolio-portfolio{
     display: flex;
     margin: 0 auto;
-    justify-content: space-between;
-    row-gap: 30px;
     flex-wrap: wrap;
+    gap: 30px;
+    
     padding-bottom: 94px;
 }
 .portfolio-portfolio>li{
     border: 1px solid var(--portfolio);
     background: var(--h1text);
+    flex-basis: calc((100% - 30px*2) / 3);
 }
 .portfolio-portfolio>li>h3{
     padding: 20px 0px 4px 24px;
