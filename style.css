@@ -154,7 +154,8 @@ body{
 .prefer-ul{
     display: flex;
     padding: 94px 0;
-    justify-content: space-between;
+    column-gap:30px;
+    justify-content: center;
 }
 .prefer-title{
     color: var(--standart-text);
@@ -172,6 +173,57 @@ body{
     line-height: 1.71429;
     letter-spacing: 0.42px;
 }
+.prefer-li:nth-child(1)>.prefer-title::before
+{
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: var(--ourteam);
+    background-image: url(img/antenna.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.prefer-li:nth-child(2)>.prefer-title::before
+{
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: var(--ourteam);
+    background-image: url(img/clock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.prefer-li:nth-child(3)>.prefer-title::before
+{
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: var(--ourteam);
+    background-image: url(img/diagram.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.prefer-li:nth-child(4)>.prefer-title::before
+{
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: var(--ourteam);
+    background-image: url(img/astronaut.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
 .work-title,.team-title{
     color: var(--standart-text);
     text-align: center;
