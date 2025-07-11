@@ -1,0 +1,409 @@
+:root
+{
+    --button-text: #2196f3;
+    --header-fotter: #2f303a;
+    --ourteam: #f5f4fa;
+    --portfolio: #EEEEEE;
+    --h1text: #FFFFFF;
+    --add-information: #757575;
+    --standart-text: #212121;
+    --line: #ECECEC;
+    --logoblack: #000;
+}
+.studia-name{
+    color: var(--button-text);
+} 
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Roboto;
+}
+ 
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px ;
+}
+.logo{
+    display: flex;
+}
+.header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--line);
+    
+}
+.header-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-web{
+    color: var(--button-text);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    display: flex;
+}
+.logo-studio{
+    color: var(--logoblack);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+}
+.nav-page{
+    color: var(--standart-text);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+.nav-page:hover{
+    color: var(--button-text);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+.div-contact{
+    color: var(--add-information);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    display: flex;
+}
+.div-contact:hover{
+    color: var(--button-text);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+.deicsion{
+    background-color: var(--header-fotter);
+    padding-bottom: 200px;
+}
+.nav{
+    display: flex;
+    margin-right: 344px;
+}
+.nav-ul{
+    display: flex;
+    column-gap: 50px;
+}
+.div{
+    display: flex;
+    column-gap: 50px;
+}/*
+.studia{
+    color: var(--button-text);
+}
+.portfolio{
+    color: var(--button-text);
+}*/
+.deicsion{
+    background-image: 
+    linear-gradient(#2F303A66,#2F303A66), 
+    url(img/hat.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.decision-text{
+    color: var(--h1text);
+    padding: 200px 0 30px 0;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36364;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    margin:0 auto 0 auto;
+    text-align: center;
+    width: 696px;
+}
+.decision-button{
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--h1text);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    letter-spacing: 0.96px;
+    padding: 10px 32px;
+    margin:0 auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.decision-button-text{
+    text-align: center;
+}
+.prefer-ul{
+    display: flex;
+    padding: 94px 0;
+    column-gap:30px;
+    justify-content: center;
+}
+.prefer-title{
+    color: var(--standart-text);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin: 0 0 0 0;
+}
+.prefer-text{
+    color: var(--add-information);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71429;
+    letter-spacing: 0.42px;
+}
+.prefer-li:nth-child(1)>.prefer-title::before
+{
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: var(--ourteam);
+    background-image: url(img/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.prefer-li:nth-child(2)>.prefer-title::before
+{
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: var(--ourteam);
+    background-image: url(img/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.prefer-li:nth-child(3)>.prefer-title::before
+{
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: var(--ourteam);
+    background-image: url(img/diagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.prefer-li:nth-child(4)>.prefer-title::before
+{
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: var(--ourteam);
+    background-image: url(img/astronaut.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.work-title,.team-title{
+    color: var(--standart-text);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+}
+.work-title{
+    display: flex;
+    margin: 0 auto;
+    width: 366.8px;
+    padding-bottom: 50px;
+}
+.team{
+    background-color: var(--ourteam);
+}
+.team-title{
+    display: flex;
+    padding-left: 453px;
+    margin: 0 0 0 0;
+    padding-bottom: 50px;
+    padding-top: 94px;
+}
+.work-ul{
+    display: flex;
+    justify-content: space-between;
+}
+.work-img{
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.team-name{
+    color: var(--standart-text);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;    
+    letter-spacing: 0.48px; 
+}
+.team-work{
+    color: var(--add-information);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+.team-ul{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+    column-gap: 30px;
+}
+.team-li{
+    background-color: var(--h1text);
+}
+.team-image{
+    padding-bottom: 30px;
+}
+.team-name{
+    padding-bottom: 10px;
+}
+.team-work{
+    padding-bottom: 30px;
+}
+footer{
+    background-color: var(--header-fotter);
+}
+.logo-footer{
+    display: flex;
+    padding: 60px 0 20px;
+}
+.footer-contact{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71429;
+    letter-spacing: 0.42px;
+}
+.logo-studio-footer{
+    color: var(--h1text);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+}
+.footer-location{
+    color: var(--h1text);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71429; 
+    letter-spacing: 0.42px;
+}
+.footer-div{
+    display: flex;
+    padding-bottom: 60px;
+    flex-direction: column;
+    row-gap: 9px;
+}
+.portfolio-button{
+    border-radius: 4px;
+    background: var(--ourteam); 
+    color: var(--standart-text);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.625; /* 162.5% */
+    letter-spacing: 0.48px;   
+    padding: 6px 22px;
+    flex-shrink: 0;
+}
+.portfolio-button:hover{
+    border-radius: 4px;
+    background: var(--button-text);
+    color: var(--h1text);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.625; /* % */
+    letter-spacing: 0.48px;
+    /* shadow-middle */
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);  
+}
+.portfolio-title{
+    color: var(--standart-text);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2; /* 200% */
+    letter-spacing: 1.08px;
+}
+.portfolio-text{
+    color: var(--add-information);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.875; /* 187.5% */
+    letter-spacing: 0.48px;
+}
+.portfolio-ulbuttons{
+    display: flex;
+    column-gap: 8px;
+    margin: 0 auto;
+    justify-content: center;
+    width: auto;
+    padding: 94px 0;
+    white-space: nowrap;
+}
+.all{
+    padding: 6px 25px;
+}
+.portfolio-portfolio{
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+    padding-bottom: 94px;
+}
+.portfolio-portfolio>li{
+    border: 1px solid var(--portfolio);
+    background: var(--h1text);
+    flex-basis: calc((100% - 30px*2) / 3);
+}
+.portfolio-portfolio>li>h3{
+    padding: 20px 0px 4px 24px;
+}
+.portfolio-portfolio>li>p{
+    padding: 0 0 20px 24px;
+}
+
+
+
+
+
