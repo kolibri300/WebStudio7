@@ -17,7 +17,7 @@
         <nav class="nav">
             <ul class="nav-ul">
                 <li class="nav-li">
-                    <a href="#" class="nav-page">Студія</a>
+                    <a href="#" class="nav-page choosen">Студія</a>
                 </li>
                 <li class="nav-li">
                     <a href="second.html" class="nav-page">Портфоліо</a>
@@ -48,7 +48,7 @@
             <h1 class="decision-text">
                 ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ
             </h1>
-            <button type="button" class="decision-button"><span class="decision-button-text">Замовити послуги</span></button>
+            <button type="button" data-modal-open class="decision-button"><span class="decision-button-text">Замовити послуги</span></button>
             </div>
         </section>
         <section class="prefer container">
@@ -363,7 +363,68 @@
                 </li>
             </ul>
         </div>
+        <div class="footer-telegram">
+            <p class="footer-telegram-p">
+                Підпишіться на розсилку
+            </p>
+            <form action="" class="footer-telegram-form">
+                <input type="text" placeholder="E-mail" class="footer-telegram-input">
+                <button class="footer-telegram-btn">                                        
+                    Підписатися
+                    <svg class="footer-telegram-svg">
+                        <use href="img/symbol-defs.svg#icon-telegram"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
     </div>
     </footer>
+    <div data-modal class="background is-hidden">
+        <div class="modalca">
+            <p class="form-text">
+                Залиште свої дані, ми вам передзвонимо
+            </p>
+            <form action="" class="form">
+                <label class="form-label">
+                    Ім'я
+                    <input type="text"/>
+                    <svg class="modalca-svg">
+                        <use href="img/symbol-defs.svg#icon-person"></use>
+                    </svg>
+                </label>
+                <label class="form-label">
+                    Телефон
+                    <input type="text"/>
+                    <svg class="modalca-svg">
+                        <use href="img/symbol-defs.svg#icon-phoneblack"></use>
+                    </svg>
+                </label>
+                <label class="form-label">
+                    Пошта
+                    <input type="text"/>
+                    <svg class="modalca-svg">
+                        <use href="img/symbol-defs.svg#icon-emailblack"></use>
+                    </svg>
+                </label>
+                <label class="form-label">
+                    Коментар
+                    <textarea name="" placeholder="Введіть текст" id=""></textarea>
+                </label>
+                <div class="form-div">
+                    <input type="checkbox" value="" class="form-checkbox">
+                    <label class="form-checkbox-text">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
+                </div>
+                <div class="form-brn-div">
+                    <button class="form-brn">Відправити</button>
+                </div>
+            </form>
+            <div data-modal-close class="modalca-svg-close">
+                <svg>
+                    <use href="img/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <script src="js/modal.js"></script>
 </body>
 </html>
